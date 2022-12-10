@@ -13,7 +13,7 @@ body:
           required: true
   - type: input
     id: command
-    vlidations: 
+    validations: 
       required: true
      attributes:
       label: "💬 Command/Feature"
