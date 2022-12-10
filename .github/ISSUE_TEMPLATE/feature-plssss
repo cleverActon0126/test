@@ -1,0 +1,37 @@
+name: "🪧 WE WANT THIS (Feature Request)"
+description: "Request a feature that you want to be added to the bot"
+#title: "[FR] "
+labels: [enhancement]
+body:
+  - type: checkboxes
+    id: no-duplicate-issues
+    attributes:
+      label: "⚠️ Please verify that this feature request has NOT been raised before."
+      description: "Search in the issues sections by clicking [HERE](https://github.com/Skillbot/Skil/issues?q=)"
+      options:
+        - label: "I checked and didn't find similar issue"
+          required: true
+  - type: input
+    id: command
+    attributes:
+      label: "💬 Command/Feature"
+      description: "What is the command/feature that you want to be implemented?"
+      placeholder: "Help command"
+    validations: 
+      required: true
+  - type: textarea
+    id: bug-description
+    validations:
+      required: true
+    attributes:
+      label: "📝 Describe the new command/feature"
+      description: "Tell us about your billiant idea, or we won't know what to add to the bot."
+      placeholder: "Describe what are you asking for..."
+  - type: input
+    id: guild-id
+    attributes:
+      label: "🔢 Server ID"
+      description: "What is your server ID? ([Enable Discord Developer Mode](https://discord.com/developers/docs/game-sdk/store#application-test-mode), then right click your server ID and press copy ID)"
+      placeholder: "197038439483310086"
+    validations:
+      required: true
