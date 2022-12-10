@@ -13,7 +13,7 @@ body:
           required: true
   - type: input
     id: command
-     attributes:
+    attributes:
       label: "💬 Command/Feature"
       description: "What is the command/feature that you experienced the bug on?"
       placeholder: "Help command"
