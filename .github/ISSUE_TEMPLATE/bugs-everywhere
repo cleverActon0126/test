@@ -1,0 +1,37 @@
+name: "🐞 Bugs Everywhere!! (Bug report)"
+description: "Report a bug you that you see"
+#title: "[Bug] "
+labels: [bug]
+body:
+  - type: checkboxes
+    id: no-duplicate-issues
+    attributes:
+      label: "⚠️ Please verify that this bug has NOT been raised before."
+      description: "Search in the issues sections by clicking [HERE](https://github.com/Skillbot/Skil/issues?q=)"
+      options:
+        - label: "I checked and didn't find similar issue"
+          required: true
+  - type: input
+    id: command
+    vlidations: 
+      required: true
+     attributes:
+      label: "💬 Command/Feature"
+      description: "What is the command/feature that you experienced the bug on?"
+      placeholder: "Help command"
+  - type: textarea
+    id: bug-description
+    validations:
+      required: true
+    attributes:
+      label: "📝 Describe the bug"
+      description: "Please walk us through it step by step."
+      placeholder: "Describe what are you asking for..."
+  - type: input
+    id: guild-id
+    attributes:
+      label: "🔢 Server ID"
+      description: "What is your server ID? ([Enable Discord Developer Mode](https://discord.com/developers/docs/game-sdk/store#application-test-mode), then right click your server ID and press copy ID)"
+      placeholder: "197038439483310086"
+    validations:
+      required: true
